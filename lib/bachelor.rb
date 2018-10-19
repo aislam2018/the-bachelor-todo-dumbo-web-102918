@@ -53,8 +53,8 @@ def get_average_age_for_season(data, season)
     if season_num == season 
       ppl_arr.each do |person_hash|
 
-        person_hash["status"] == "Winner"
-          return person_hash["name"].split(" ").first
+       sum += person_hash["age"].to_i
+          
         
     end
   end
