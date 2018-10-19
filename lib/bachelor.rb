@@ -49,16 +49,18 @@ end
 
 def get_average_age_for_season(data, season)
   sum = 0 
+  ppl = 0
   data.each do |season_num, ppl_arr|
     if season_num == season 
       ppl_arr.each do |person_hash|
 
        sum += person_hash["age"].to_i
+       ppl += 1
       
         
     end
   end
 end
 
-  sum / ppl_arr.length  
+  (sum / ppl).round  
 end
