@@ -62,5 +62,5 @@ def get_average_age_for_season(data, season)
   end
 end
 
-  (sum / ppl).round(0)  
+  (sum / ppl.to_f).round(0)  
 end
