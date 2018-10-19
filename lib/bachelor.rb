@@ -18,8 +18,6 @@ def get_contestant_name(data, occupation)
 
         if person_hash["occupation"] == occupation
           return person_hash["name"]
-
-    end
   end
   end
 end
